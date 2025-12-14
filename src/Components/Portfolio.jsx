@@ -10,56 +10,56 @@ function Portfolio() {
   const events = [
     {
       category: 'thumbnails',
-      img: 'assets/img/Thumbnails/1.png',
+      img: 'https://res.cloudinary.com/dsn5tn9kz/image/upload/v1765716762/1_bxcurw.png',
       title: 'Pak Water & Energy Expo',
       desc: 'Pak Water & Energy Expo (PWE) focuses exclusively on Water and Energy sectors, gathering top industry leaders.'
     },
     {
       category: 'thumbnails',
-      img: 'assets/img/Thumbnails/2.png',
+      img: 'https://res.cloudinary.com/dsn5tn9kz/image/upload/v1765716762/2_zeldtg.png',
       title: 'ICAP CFO Conference',
       desc: 'Annual conference by ICAP, managed by Prime Event Management, connecting finance leaders nationwide.'
     },
     {
       category: 'thumbnails',
-      img: 'assets/img/Thumbnails/3.png',
+      img: 'https://res.cloudinary.com/dsn5tn9kz/image/upload/v1765716762/3_ijhs1z.png',
       title: 'Sports Event',
       desc: 'Experience thrilling sports competitions with top athletes and exciting matches.'
     },
     {
       category: 'thumbnails',
-      img: 'assets/img/Thumbnails/4.png',
+      img: 'https://res.cloudinary.com/dsn5tn9kz/image/upload/v1765716763/4_p7g4ih.png',
       title: 'Sports Event',
       desc: 'Experience thrilling sports competitions with top athletes and exciting matches.'
     },
     {
       category: 'thumbnails',
-      img: 'assets/img/Thumbnails/5.png',
+      img: 'assets/img/https://res.cloudinary.com/dsn5tn9kz/image/upload/v1765716762/5_towvyo.png',
       title: 'Sports Event',
       desc: 'Experience thrilling sports competitions with top athletes and exciting matches.'
     },
     {
       category: 'thumbnails',
-      img: 'assets/img/Thumbnails/6.png',
+      img: 'https://res.cloudinary.com/dsn5tn9kz/image/upload/v1765716762/6_ivmtnz.png',
       title: 'Sports Event',
       desc: 'Experience thrilling sports competitions with top athletes and exciting matches.'
     },
     {
       category: 'thumbnails',
-      img: 'assets/img/Thumbnails/7.png',
+      img: 'https://res.cloudinary.com/dsn5tn9kz/image/upload/v1765716763/7_jokp6y.png',
       title: 'Sports Event',
       desc: 'Experience thrilling sports competitions with top athletes and exciting matches.'
     },
     {
       category: 'thumbnails',
-      img: 'assets/img/Thumbnails/8.png',
+      img: 'https://res.cloudinary.com/dsn5tn9kz/image/upload/v1765716763/8_chyrvw.png',
       title: 'Sports Event',
       desc: 'Experience thrilling sports competitions with top athletes and exciting matches.'
     },
    
     {
       category: 'thumbnails',
-      img: 'assets/img/Thumbnails/9.png',
+      img: 'https://res.cloudinary.com/dsn5tn9kz/image/upload/v1765716764/9_jnuwrk.png',
       title: 'Sports Event',
       desc: 'Experience thrilling sports competitions with top athletes and exciting matches.'
     },
@@ -67,187 +67,187 @@ function Portfolio() {
   
     {
       category: 'photomanipulation',
-      img: 'assets/img/PhotoManipulation/1.jpg',
+      img: 'https://res.cloudinary.com/dsn5tn9kz/image/upload/v1765720509/1_kk1vyq.jpg',
       title: 'Family Festival',
       desc: 'Fun-filled day for families with games, food stalls, music, and special performances.'
     },
     {
       category: 'photomanipulation',
-      img: 'assets/img/PhotoManipulation/2.jpg',
+      img: 'https://res.cloudinary.com/dsn5tn9kz/image/upload/v1765720512/2_aar8zr.jpg',
       title: 'Corporate Seminar',
       desc: 'Exclusive corporate seminars focusing on growth strategies and leadership excellence.'
     },
     {
       category: 'photomanipulation',
-      img: 'assets/img/PhotoManipulation/3.jpg',
+      img: 'https://res.cloudinary.com/dsn5tn9kz/image/upload/v1765720511/3_tl8kiz.jpg',
       title: 'Corporate Meet',
       desc: 'Network with industry leaders and explore new business opportunities and collaborations.'
     },
     {
       category: 'photomanipulation',
-      img: 'assets/img/PhotoManipulation/4.jpg',
+      img: 'https://res.cloudinary.com/dsn5tn9kz/image/upload/v1765720518/4_ka28iu.jpg',
       title: 'Business Summit',
       desc: 'Top executives gathering to share insights on the future of global business and economy.'
     },
     {
       category: 'photomanipulation',
-      img: 'assets/img/PhotoManipulation/5.jpg',
+      img: 'https://res.cloudinary.com/dsn5tn9kz/image/upload/v1765720512/5_aaw2yj.jpg',
       title: 'Business Summit',
       desc: 'Top executives gathering to share insights on the future of global business and economy.'
     },
     {
       category: 'photomanipulation',
-      img: 'assets/img/PhotoManipulation/6.jpg',
+      img: 'https://res.cloudinary.com/dsn5tn9kz/image/upload/v1765720518/6_fk0rtb.jpg',
       title: 'Business Summit',
       desc: 'Top executives gathering to share insights on the future of global business and economy.'
     },
     {
       category: 'photomanipulation',
-      img: 'assets/img/PhotoManipulation/7.jpg',
+      img: 'https://res.cloudinary.com/dsn5tn9kz/image/upload/v1765720515/7_lpcwpk.jpg',
       title: 'Business Summit',
       desc: 'Top executives gathering to share insights on the future of global business and economy.'
     },
     {
       category: 'photomanipulation',
-      img: 'assets/img/PhotoManipulation/8.jpg',
+      img: 'https://res.cloudinary.com/dsn5tn9kz/image/upload/v1765720514/8_aqw9h6.jpg',
       title: 'Business Summit',
       desc: 'Top executives gathering to share insights on the future of global business and economy.'
     },
     {
       category: 'photomanipulation',
-      img: 'assets/img/PhotoManipulation/9.jpg',
+      img: 'https://res.cloudinary.com/dsn5tn9kz/image/upload/v1765720515/9_maajfc.jpg',
       title: 'Business Summit',
       desc: 'Top executives gathering to share insights on the future of global business and economy.'
     },
     {
       category: 'photomanipulation',
-      img: 'assets/img/PhotoManipulation/10.jpg',
+      img: 'https://res.cloudinary.com/dsn5tn9kz/image/upload/v1765720515/10_vwpvq0.jpg',
       title: 'Business Summit',
       desc: 'Top executives gathering to share insights on the future of global business and economy.'
     },
     {
       category: 'photomanipulation',
-      img: 'assets/img/PhotoManipulation/11.jpg',
+      img: 'https://res.cloudinary.com/dsn5tn9kz/image/upload/v1765720516/11_kh2j4r.jpg',
       title: 'Business Summit',
       desc: 'Top executives gathering to share insights on the future of global business and economy.'
     },
     {
       category: 'photomanipulation',
-      img: 'assets/img/PhotoManipulation/12.jpg',
+      img: 'https://res.cloudinary.com/dsn5tn9kz/image/upload/v1765720519/12_mbxnzn.jpg',
       title: 'Business Summit',
       desc: 'Top executives gathering to share insights on the future of global business and economy.'
     },
     {
       category: 'photomanipulation',
-      img: 'assets/img/PhotoManipulation/13.jpg',
+      img: 'https://res.cloudinary.com/dsn5tn9kz/image/upload/v1765720516/13_dhpo6y.jpg',
       title: 'Business Summit',
       desc: 'Top executives gathering to share insights on the future of global business and economy.'
     },
      {
       category: 'creativeads',
-      img: 'assets/img/CreativeAds/1.jpg',
+      img: 'https://res.cloudinary.com/dsn5tn9kz/image/upload/v1765720389/1_llc1l8.jpg',
       title: 'Cultural Festival',
       desc: 'Immerse yourself in vibrant cultures, traditions, food, and art exhibitions.'
     },
      {
       category: 'creativeads',
-      img: 'assets/img/CreativeAds/2.png',
+      img: 'https://res.cloudinary.com/dsn5tn9kz/image/upload/v1765718927/2_kutude.png',
       title: 'Cultural Festival',
       desc: 'Immerse yourself in vibrant cultures, traditions, food, and art exhibitions.'
     },
      {
       category: 'creativeads',
-      img: 'assets/img/CreativeAds/3.jpg',
+      img: 'https://res.cloudinary.com/dsn5tn9kz/image/upload/v1765718950/3_zitpxk.jpg',
       title: 'Cultural Festival',
       desc: 'Immerse yourself in vibrant cultures, traditions, food, and art exhibitions.'
     },
      {
       category: 'creativeads',
-      img: 'assets/img/CreativeAds/4.png',
+      img: 'https://res.cloudinary.com/dsn5tn9kz/image/upload/v1765718926/4_qjbtv6.png',
       title: 'Cultural Festival',
       desc: 'Immerse yourself in vibrant cultures, traditions, food, and art exhibitions.'
     },
      {
       category: 'creativeads',
-      img: 'assets/img/CreativeAds/5.jpg',
+      img: 'https://res.cloudinary.com/dsn5tn9kz/image/upload/v1765718931/5_ck0mxa.jpg',
       title: 'Cultural Festival',
       desc: 'Immerse yourself in vibrant cultures, traditions, food, and art exhibitions.'
     },
      {
       category: 'creativeads',
-      img: 'assets/img/CreativeAds/6.jpg',
+      img: 'https://res.cloudinary.com/dsn5tn9kz/image/upload/v1765718947/6_mvy4gb.jpg',
       title: 'Cultural Festival',
       desc: 'Immerse yourself in vibrant cultures, traditions, food, and art exhibitions.'
     },
      {
       category: 'creativeads',
-      img: 'assets/img/CreativeAds/7.jpg',
+      img: 'https://res.cloudinary.com/dsn5tn9kz/image/upload/v1765718930/7_deqsyp.jpg',
       title: 'Cultural Festival',
       desc: 'Immerse yourself in vibrant cultures, traditions, food, and art exhibitions.'
     },
      {
       category: 'creativeads',
-      img: 'assets/img/CreativeAds/8.jpg',
+      img: 'https://res.cloudinary.com/dsn5tn9kz/image/upload/v1765718927/8_nza983.jpg',
       title: 'Cultural Festival',
       desc: 'Immerse yourself in vibrant cultures, traditions, food, and art exhibitions.'
     },
      {
       category: 'creativeads',
-      img: 'assets/img/CreativeAds/9.jpg',
+      img: 'https://res.cloudinary.com/dsn5tn9kz/image/upload/v1765718929/9_przfam.jpg',
       title: 'Cultural Festival',
       desc: 'Immerse yourself in vibrant cultures, traditions, food, and art exhibitions.'
     },
      {
       category: 'creativeads',
-      img: 'assets/img/CreativeAds/10.jpg',
+      img: 'https://res.cloudinary.com/dsn5tn9kz/image/upload/v1765718929/10_pkxszx.jpg',
       title: 'Cultural Festival',
       desc: 'Immerse yourself in vibrant cultures, traditions, food, and art exhibitions.'
     },
      {
       category: 'creativeads',
-      img: 'assets/img/CreativeAds/11.jpg',
+      img: 'https://res.cloudinary.com/dsn5tn9kz/image/upload/v1765718931/11_jkjj24.jpg',
       title: 'Cultural Festival',
       desc: 'Immerse yourself in vibrant cultures, traditions, food, and art exhibitions.'
     },
      {
       category: 'creativeads',
-      img: 'assets/img/CreativeAds/12.jpg',
+      img: 'https://res.cloudinary.com/dsn5tn9kz/image/upload/v1765718943/12_a7r37t.jpg',
       title: 'Cultural Festival',
       desc: 'Immerse yourself in vibrant cultures, traditions, food, and art exhibitions.'
     },
      {
       category: 'creativeads',
-      img: 'assets/img/CreativeAds/13.jpg',
+      img: 'https://res.cloudinary.com/dsn5tn9kz/image/upload/v1765718949/13_zb7vai.jpg',
       title: 'Cultural Festival',
       desc: 'Immerse yourself in vibrant cultures, traditions, food, and art exhibitions.'
     },
      {
       category: 'creativeads',
-      img: 'assets/img/CreativeAds/14.jpg',
+      img: 'https://res.cloudinary.com/dsn5tn9kz/image/upload/v1765718938/14_ww1xcv.jpg',
       title: 'Cultural Festival',
       desc: 'Immerse yourself in vibrant cultures, traditions, food, and art exhibitions.'
     },
      {
       category: 'creativeads',
-      img: 'assets/img/CreativeAds/15.jpg',
+      img: 'https://res.cloudinary.com/dsn5tn9kz/image/upload/v1765718934/15_hnenlk.jpg',
       title: 'Cultural Festival',
       desc: 'Immerse yourself in vibrant cultures, traditions, food, and art exhibitions.'
     },
      {
       category: 'creativeads',
-      img: 'assets/img/CreativeAds/16.png',
+      img: 'https://res.cloudinary.com/dsn5tn9kz/image/upload/v1765718937/16_pgeipz.png',
       title: 'Cultural Festival',
       desc: 'Immerse yourself in vibrant cultures, traditions, food, and art exhibitions.'
     },
      {
       category: 'creativeads',
-      img: 'assets/img/CreativeAds/17.jpg',
+      img: 'https://res.cloudinary.com/dsn5tn9kz/image/upload/v1765718941/17_zdznwo.jpg',
       title: 'Cultural Festival',
       desc: 'Immerse yourself in vibrant cultures, traditions, food, and art exhibitions.'
     },
      {
       category: 'creativeads',
-      img: 'assets/img/CreativeAds/18.png',
+      img: 'https://res.cloudinary.com/dsn5tn9kz/image/upload/v1765718941/18_xkru3z.png',
       title: 'Cultural Festival',
       desc: 'Immerse yourself in vibrant cultures, traditions, food, and art exhibitions.'
     },
@@ -261,83 +261,78 @@ function Portfolio() {
     },
     {
       category: 'ebook',
-      img: 'assets/img/Ebook/1.png',
+      img: 'https://res.cloudinary.com/dsn5tn9kz/image/upload/v1765720911/1_zsqri0.png',
       title: 'Concert Night',
       desc: 'Enjoy electrifying performances by your favorite artists at our mega concert event!'
     },
     {
       category: 'ebook',
-      img: 'assets/img/Ebook/2.png',
+      img: 'https://res.cloudinary.com/dsn5tn9kz/image/upload/v1765720912/2_b6s4fw.png',
       title: 'Concert Night',
       desc: 'Enjoy electrifying performances by your favorite artists at our mega concert event!'
     },
     {
       category: 'ebook',
-      img: 'assets/img/Ebook/3.png',
+      img: 'https://res.cloudinary.com/dsn5tn9kz/image/upload/v1765720913/3_euypje.png',
       title: 'Concert Night',
       desc: 'Enjoy electrifying performances by your favorite artists at our mega concert event!'
     },
     {
       category: 'ebook',
-      img: 'assets/img/Ebook/4.png',
+      img: 'https://res.cloudinary.com/dsn5tn9kz/image/upload/v1765720913/4_mxpcvd.png',
       title: 'Concert Night',
       desc: 'Enjoy electrifying performances by your favorite artists at our mega concert event!'
     },
     {
       category: 'ebook',
-      img: 'assets/img/Ebook/5.png',
+      img: 'https://res.cloudinary.com/dsn5tn9kz/image/upload/v1765720915/5_le5yfg.png',
       title: 'Concert Night',
       desc: 'Enjoy electrifying performances by your favorite artists at our mega concert event!'
     },
     {
       category: 'ebook',
-      img: 'assets/img/Ebook/6.png',
+      img: 'https://res.cloudinary.com/dsn5tn9kz/image/upload/v1765720914/6_molecb.png',
       title: 'Concert Night',
       desc: 'Enjoy electrifying performances by your favorite artists at our mega concert event!'
     },
     {
       category: 'ebook',
-      img: 'assets/img/Ebook/7.png',
+      img: 'https://res.cloudinary.com/dsn5tn9kz/image/upload/v1765720913/7_wdeyzf.png',
       title: 'Concert Night',
       desc: 'Enjoy electrifying performances by your favorite artists at our mega concert event!'
     },
     {
       category: 'ebook',
-      img: 'assets/img/Ebook/8.png',
+      img: 'https://res.cloudinary.com/dsn5tn9kz/image/upload/v1765720915/8_wgylil.png',
       title: 'Concert Night',
       desc: 'Enjoy electrifying performances by your favorite artists at our mega concert event!'
     },
     {
       category: 'ebook',
-      img: 'assets/img/Ebook/9.png',
+      img: 'https://res.cloudinary.com/dsn5tn9kz/image/upload/v1765720914/9_ad5zxn.png',
       title: 'Concert Night',
       desc: 'Enjoy electrifying performances by your favorite artists at our mega concert event!'
     },
     {
       category: 'ebook',
-      img: 'assets/img/Ebook/10.png',
+      img: 'https://res.cloudinary.com/dsn5tn9kz/image/upload/v1765720915/10_yw81nh.png',
       title: 'Concert Night',
       desc: 'Enjoy electrifying performances by your favorite artists at our mega concert event!'
     },
     {
       category: 'ebook',
-      img: 'assets/img/Ebook/11.png',
+      img: 'https://res.cloudinary.com/dsn5tn9kz/image/upload/v1765720918/11_hk07w7.png ',
       title: 'Concert Night',
       desc: 'Enjoy electrifying performances by your favorite artists at our mega concert event!'
     },
 
     {
       category: 'ebook',
-      img: 'assets/img/Ebook/13.png',
+      img: 'https://res.cloudinary.com/dsn5tn9kz/image/upload/v1765720919/13_mud3wy.png',
       title: 'Concert Night',
       desc: 'Enjoy electrifying performances by your favorite artists at our mega concert event!'
     },
-    {
-      category: 'ebook',
-      img: 'assets/img/Ebook/13.png',
-      title: 'Concert Night',
-      desc: 'Enjoy electrifying performances by your favorite artists at our mega concert event!'
-    },
+    
   ];
 
   // Filtered events according to current filter
