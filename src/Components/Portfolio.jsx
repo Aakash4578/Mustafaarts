@@ -34,7 +34,7 @@ function Portfolio() {
     },
     {
       category: 'thumbnails',
-      img: 'assets/img/https://res.cloudinary.com/dsn5tn9kz/image/upload/v1765716762/5_towvyo.png',
+      img: 'https://res.cloudinary.com/dsn5tn9kz/image/upload/v1765716762/5_towvyo.png',
       title: 'Sports Event',
       desc: 'Experience thrilling sports competitions with top athletes and exciting matches.'
     },
@@ -401,7 +401,7 @@ const filteredEvents =
       <button
         className="btn allbutton mt-4"
         onClick={() => setVisibleCount(filteredEvents.length)}
-       data-aos="fade-up">
+       >
         See All
       </button>
     )}
