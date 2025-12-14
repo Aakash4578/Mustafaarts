@@ -1,0 +1,63 @@
+/* Modern Section Heading */
+.modernheading {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: fit-content;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Heading text */
+.modernheading h2 {
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: #ffffff;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  z-index: 2;
+  margin: 0;
+  text-align: center; /* Center text */
+}
+
+/* Before / After Lines */
+.modernheading::before,
+.modernheading::after {
+  content: "";
+  height: 2px;
+  width: 100px;
+  background: #fff;
+  opacity: 0.8;
+}
+
+/* Line spacing */
+.modernheading::before {
+  margin-right: 15px;
+}
+
+.modernheading::after {
+  margin-left: 15px;
+}
+
+/* Mobile: adjust size of lines and text */
+@media screen and (max-width: 767px) {
+  .modernheading h2 {
+    font-size: 1.6rem; /* smaller text */
+  }
+  .modernheading::before,
+  .modernheading::after {
+    width: 50px; /* shorter lines */
+  }
+}
+
+/* Tablet: adjust for medium screens */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .modernheading h2 {
+    font-size: 1.9rem;
+  }
+  .modernheading::before,
+  .modernheading::after {
+    width: 80px;
+  }
+}

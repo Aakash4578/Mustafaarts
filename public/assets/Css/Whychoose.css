@@ -1,0 +1,111 @@
+/* ===================== WHY CHOOSE SECTION ===================== */
+.why-section {
+  background: transparent;
+  color: #fff;
+  padding: 60px 15px 80px; /* mobile padding sides */
+}
+
+/* Small heading */
+.small-heading {
+  color: #c5c5c5;
+  font-size: 12px; /* mobile smaller */
+  letter-spacing: 2px;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+/* Main heading */
+.main-heading {
+  font-size: 24px; /* mobile smaller */
+  font-weight: 700;
+  max-width: 90%;
+  margin: 0 auto;
+  line-height: 1.3;
+}
+
+/* Sub heading */
+.sub-heading {
+  color: #c5c5c5;
+  font-size: 14px; /* mobile smaller */
+  max-width: 90%;
+  margin: 10px auto 0 auto;
+}
+
+/* Cards container */
+.row.mt-5.g-4.justify-content-center {
+  gap: 1rem;
+}
+
+/* Feature Cards */
+.feature-card {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  padding: 25px 15px; /* mobile compact */
+  height: 100%;
+  transition: all 0.3s ease;
+}
+
+.feature-card:hover {
+  transform: translateY(-5px);
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+/* Icon box */
+.icon-box {
+  width: 50px;  /* mobile */
+  height: 50px;
+  background: rgba(255,255,255,0.2);
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 15px;
+}
+
+.icon-box i {
+  font-size: 22px; /* mobile */
+  color: #fff;
+}
+
+/* Card title */
+.card-title {
+  font-size: 18px; /* mobile */
+  font-weight: 600;
+  margin-bottom: 8px;
+  color: #fff;
+}
+
+/* Card sub-heading */
+.feature-card .sub-heading {
+  font-size: 13px; /* mobile */
+}
+
+/* ===================== TABLET ===================== */
+@media (min-width: 576px) {
+  .main-heading { font-size: 28px; max-width: 700px; }
+  .sub-heading { font-size: 14px; max-width: 650px; }
+  .feature-card { padding: 30px 20px; }
+  .icon-box { width: 55px; height: 55px; margin-bottom: 20px; }
+  .icon-box i { font-size: 25px; }
+  .card-title { font-size: 20px; }
+  .feature-card .sub-heading { font-size: 14px; }
+}
+
+/* ===================== DESKTOP ===================== */
+@media (min-width: 992px) {
+  .why-section { padding: 80px 30px 100px; }
+  .main-heading { font-size: 32px; }
+  .sub-heading { font-size: 15px; }
+  .feature-card { padding: 35px 25px; }
+  .card-title { font-size: 22px; }
+  .feature-card .sub-heading { font-size: 15px; }
+}
+
+/* ===================== LARGE SCREENS ===================== */
+@media (min-width: 1200px) {
+  .main-heading { font-size: 36px; }
+  .card-title { font-size: 24px; }
+  .feature-card .sub-heading { font-size: 16px; }
+}

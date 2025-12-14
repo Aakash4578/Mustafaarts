@@ -1,0 +1,182 @@
+/* ================== PORTFOLIO SECTION ================== */
+
+.brand-section-tab {
+  padding: 60px 0;
+  position: relative;
+  background: linear-gradient(135deg, var(--main-black), var(--main-color));
+  overflow: hidden;
+}
+
+.brand-section-tab > * {
+  position: relative;
+  z-index: 1;
+}
+
+/* ================== FILTER BUTTONS ================== */
+
+.filter-btns {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.filter-btns .filter-btn {
+  font-weight: 900;
+  font-size: 0.8rem;
+  padding: 6px 15px;
+  border-radius: 12px;
+  border: 2px solid #ffffff8f;
+  color: #fff;
+  background: rgba(255, 255, 255, 0.1);
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.4);
+  transition: all 0.3s ease;
+  margin: 6px;
+}
+
+.filter-btns .filter-btn:hover,
+.filter-btns .filter-btn.active {
+  background: var(--main-color);
+  color: #fff;
+}
+
+/* ================== MASONRY GRID ================== */
+
+.masonry-grid {
+  column-count: 1;
+  column-gap: 16px;
+}
+
+@media (min-width: 576px) {
+  .masonry-grid {
+    column-count: 2;
+  }
+}
+
+@media (min-width: 992px) {
+  .masonry-grid {
+    column-count: 3;
+    column-gap: 20px;
+  }
+}
+
+@media (min-width: 1400px) {
+  .masonry-grid {
+    column-count: 4;
+  }
+}
+
+/* ================== MASONRY ITEM ================== */
+
+.masonry-item {
+  break-inside: avoid;
+  margin-bottom: 20px;
+}
+
+.portfolio-item {
+  display: none;
+}
+
+.portfolio-item.show {
+  display: block;
+}
+
+/* ================== IMAGE BOX ================== */
+
+.event-image {
+  position: relative;
+  overflow: hidden;
+  border-radius: 12px;
+  background: #000;
+  transition: transform 0.4s ease;
+}
+
+.event-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: contain; /* REAL IMAGE SIZE – NO CROP */
+  transition: transform 0.4s ease;
+}
+
+.event-image:hover img {
+  transform: scale(1.05);
+}
+
+/* ================== OVERLAY ================== */
+
+.event-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6);
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  text-align: center;
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+
+.event-overlay h3 {
+  font-size: 1.2rem;
+  margin-bottom: 8px;
+}
+
+.event-overlay p {
+  font-size: 0.9rem;
+}
+
+/* Desktop hover only */
+@media (hover: hover) {
+  .event-image:hover .event-overlay {
+    opacity: 1;
+  }
+}
+
+/* Mobile touch friendly */
+@media (hover: none) {
+  .event-overlay {
+    opacity: 1;
+    background: rgba(0, 0, 0, 0.35);
+  }
+}
+
+/* ================== SEE ALL BUTTON ================== */
+
+.allbutton {
+  background: #fff;
+  border: none;
+  padding: 10px 22px;
+  border-radius: 25px;
+  color:rgb(134, 0, 0);
+  font-weight: bold;
+  transition: all 0.3s ease;
+  border: 1px solid white;
+
+}
+
+.allbutton:hover {
+  background:transparent;
+  color: white;
+  border: 1px solid white;
+}
+
+/* ================== RESPONSIVE TEXT ================== */
+
+@media (min-width: 768px) {
+  .event-overlay h3 {
+    font-size: 1.4rem;
+  }
+  .event-overlay p {
+    font-size: 1rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .event-overlay h3 {
+    font-size: 1.6rem;
+  }
+}
