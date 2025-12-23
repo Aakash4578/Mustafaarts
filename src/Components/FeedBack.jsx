@@ -39,62 +39,47 @@ export default function FeedBack() {
   const handleNext = () =>
     setActiveIndex((prev) => (prev + 1) % testimonials.length);
 
-  useEffect(() => {
-    const tl = gsap.timeline();
+ useEffect(() => {
+  // Sab images hide karo
+  imageRefs.current.forEach((img, index) => {
+    if (img) {
+      gsap.set(img, {
+        opacity: index === activeIndex ? 1 : 0,
+        x: 0,
+        scale: 1,
+        zIndex: index === activeIndex ? 2 : 1,
+      });
+    }
+  });
 
-    testimonials.forEach((_, index) => {
-      const total = testimonials.length;
-      const offset = ((index - activeIndex + total) % total); // circular offset
-      let xOffset = 0, scale = 1, zIndex = 10, opacity = 1;
-
-      if (offset === 0) {
-        xOffset = 0;
-        scale = 1;
-        zIndex = 10;
-        opacity = 1;
-      } else if (offset === 1 || offset === -(total - 1)) { // next image
-        xOffset = 60;
-        scale = 0.85;
-        zIndex = 9;
-        opacity = 0.7;
-      } else if (offset === 2 || offset === -(total - 2)) { // far back
-        xOffset = 80;
-        scale = 0.75;
-        zIndex = 8;
-        opacity = 0.5;
-      } else {
-        xOffset = 200; // hide far back images
-        scale = 0.7;
-        zIndex = 7;
-        opacity = 0;
-      }
-
-      // Adjust left side for previous images
-      if (offset > total / 2) xOffset = -xOffset;
-
-      if (imageRefs.current[index]) {
-        tl.to(
-          imageRefs.current[index],
-          {
-            x: xOffset,
-            scale: scale,
-            zIndex: zIndex,
-            opacity: opacity,
-            duration: 0.7,
-            ease: "power3.out",
-          },
-          0 // all start at same time
-        );
-      }
-    });
-
-    // Animate text
+  // Sirf active image animate ho
+  if (imageRefs.current[activeIndex]) {
     gsap.fromTo(
-      ".testimonial-text",
-      { opacity: 0, y: 20 },
-      { opacity: 1, y: 0, duration: 0.6, stagger: 0.1, ease: "power2.out" }
+      imageRefs.current[activeIndex],
+      { opacity: 0, x: 40 },
+      {
+        opacity: 1,
+        x: 0,
+        duration: 0.6,
+        ease: "power2.out",
+      }
     );
-  }, [activeIndex]);
+  }
+
+  // Text animation same
+  gsap.fromTo(
+    ".testimonial-text",
+    { opacity: 0, y: 20 },
+    {
+      opacity: 1,
+      y: 0,
+      duration: 0.6,
+      stagger: 0.1,
+      ease: "power2.out",
+    }
+  );
+}, [activeIndex]);
+
 
   return (
    <section id="testimonial">
