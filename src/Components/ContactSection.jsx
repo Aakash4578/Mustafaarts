@@ -191,7 +191,7 @@ function ContactSection() {
                     </div>
                   </div>
 
-                  <div className="ultimate-field">
+                  {/* <div className="ultimate-field">
                     <label htmlFor="projectType">Project Type</label>
                     <select
                       id="projectType"
@@ -207,7 +207,7 @@ function ContactSection() {
                       <option value="Thumbnail Design">Thumbnail Design</option>
                       <option value="Ongoing Design Support">Ongoing Design Support</option>
                     </select>
-                  </div>
+                  </div> */}
 
                   <div className="ultimate-field">
                     <label htmlFor="message">Project Details</label>
