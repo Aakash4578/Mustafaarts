@@ -71,19 +71,43 @@ export default function Testimonials() {
     <section className="testimonials-showcase-section" id="testimonial">
       <div className="container">
         <div className="testimonials-showcase-top text-center">
-          <span className="testimonials-kicker">Client Feedback</span>
-          <h2 className="testimonials-showcase-title">
+          <span
+            className="testimonials-kicker"
+            data-aos="fade-up"
+            data-aos-delay="100"
+          >
+            Client Feedback
+          </span>
+
+          <h2
+            className="testimonials-showcase-title"
+            data-aos="fade-up"
+            data-aos-delay="200"
+          >
             What clients say about the
             <span> experience, process, and final quality</span>
           </h2>
-            <p className="testimonials-showcase-subtitle">
-              A selection of feedback from people I’ve worked with across
-              ad creatives, thumbnails, branding support, and visual production.
-            </p>
+
+          <p
+            className="testimonials-showcase-subtitle"
+            data-aos="fade-up"
+            data-aos-delay="300"
+          >
+            A selection of feedback from people I’ve worked with across
+            ad creatives, thumbnails, branding support, and visual production.
+          </p>
         </div>
 
-        <div className="testimonial-showcase-shell">
-          <div className="testimonial-side-card left-side">
+        <div
+          className="testimonial-showcase-shell"
+          data-aos="fade-up"
+          data-aos-delay="400"
+        >
+          <div
+            className="testimonial-side-card left-side"
+            data-aos="fade-right"
+            data-aos-delay="450"
+          >
             <div className="testimonial-side-avatar">
               <img
                 src={testimonials[getPrevIndex()].src}
@@ -94,7 +118,12 @@ export default function Testimonials() {
             <p>{testimonials[getPrevIndex()].designation}</p>
           </div>
 
-          <div className="testimonial-main-showcase-card" ref={cardRef}>
+          <div
+            className="testimonial-main-showcase-card"
+            ref={cardRef}
+            data-aos="fade-up"
+            data-aos-delay="500"
+          >
             <div className="testimonial-main-quote-icon testimonial-fade-item">
               <i className="bx bxs-quote-left"></i>
             </div>
@@ -150,7 +179,11 @@ export default function Testimonials() {
             </div>
           </div>
 
-          <div className="testimonial-side-card right-side">
+          <div
+            className="testimonial-side-card right-side"
+            data-aos="fade-left"
+            data-aos-delay="550"
+          >
             <div className="testimonial-side-avatar">
               <img
                 src={testimonials[getNextIndex()].src}
@@ -162,16 +195,32 @@ export default function Testimonials() {
           </div>
         </div>
 
-        <div className="testimonial-showcase-strip">
-          <div className="testimonial-showcase-strip-item">
+        <div
+          className="testimonial-showcase-strip"
+          data-aos="fade-up"
+          data-aos-delay="650"
+        >
+          <div
+            className="testimonial-showcase-strip-item"
+            data-aos="fade-up"
+            data-aos-delay="700"
+          >
             <strong>4+</strong>
             <span>Client reviews</span>
           </div>
-          <div className="testimonial-showcase-strip-item">
+          <div
+            className="testimonial-showcase-strip-item"
+            data-aos="fade-up"
+            data-aos-delay="800"
+          >
             <strong>Premium</strong>
             <span>Creative execution</span>
           </div>
-          <div className="testimonial-showcase-strip-item">
+          <div
+            className="testimonial-showcase-strip-item"
+            data-aos="fade-up"
+            data-aos-delay="900"
+          >
             <strong>Trusted</strong>
             <span>Professional workflow</span>
           </div>

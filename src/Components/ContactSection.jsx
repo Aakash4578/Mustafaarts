@@ -80,41 +80,69 @@ function ContactSection() {
 
           <div className="row g-5 align-items-center">
             <div className="col-lg-6">
-              <div className="contact-ultimate-content">
-                <span className="contact-kicker">
+              <div
+                className="contact-ultimate-content"
+                data-aos="fade-right"
+                data-aos-delay="100"
+              >
+                <span
+                  className="contact-kicker"
+                  data-aos="fade-up"
+                  data-aos-delay="150"
+                >
                   <i className="bx bx-sparkles"></i>
                   Let’s Build Something Strong
                 </span>
 
-                <h2 className="contact-ultimate-title">
+                <h2
+                  className="contact-ultimate-title"
+                  data-aos="fade-up"
+                  data-aos-delay="250"
+                >
                   Ready to turn your ideas into
                   premium visual design?
                 </h2>
 
-               
-
-          
-
-                <div className="contact-mini-cards">
-                  <div className="contact-mini-card">
+                <div
+                  className="contact-mini-cards"
+                  data-aos="fade-up"
+                  data-aos-delay="350"
+                >
+                  <div
+                    className="contact-mini-card"
+                    data-aos="fade-up"
+                    data-aos-delay="400"
+                  >
                     <small>Email</small>
                     <a href="mailto:mustafabhutta258@gmail.com">
                       mustafabhutta258@gmail.com
                     </a>
                   </div>
 
-                  <div className="contact-mini-card">
+                  <div
+                    className="contact-mini-card"
+                    data-aos="fade-up"
+                    data-aos-delay="500"
+                  >
                     <small>Focus</small>
                     <p>Ad Creatives, Social Media, Branding</p>
                   </div>
 
-                  <div className="contact-mini-card">
+                  <div
+                    className="contact-mini-card"
+                    data-aos="fade-up"
+                    data-aos-delay="600"
+                  >
                     <small>Status</small>
                     <p>Available for freelance & Long-Term projects</p>
                   </div>
                 </div>
 
-                <div className="contact-social-strip">
+                <div
+                  className="contact-social-strip"
+                  data-aos="fade-up"
+                  data-aos-delay="700"
+                >
                   <a
                     href="https://www.instagram.com/mustafa_arts_0"
                     target="_blank"
@@ -152,18 +180,32 @@ function ContactSection() {
             </div>
 
             <div className="col-lg-6">
-              <div className="contact-glass-form-card">
+              <div
+                className="contact-glass-form-card"
+                data-aos="fade-left"
+                data-aos-delay="200"
+              >
                 <div className="contact-form-header">
-                  <span className="contact-form-badge">Project Inquiry</span>
-                  <h3>Send a message</h3>
-                  <p>
+                  <span
+                    className="contact-form-badge"
+                    data-aos="fade-up"
+                    data-aos-delay="250"
+                  >
+                    Project Inquiry
+                  </span>
+                  <h3 data-aos="fade-up" data-aos-delay="350">Send a message</h3>
+                  <p data-aos="fade-up" data-aos-delay="450">
                     Share a few details and I’ll get back to you with the next
                     best step.
                   </p>
                 </div>
 
                 <form onSubmit={handleSubmit} className="contact-ultimate-form">
-                  <div className="ultimate-field-grid">
+                  <div
+                    className="ultimate-field-grid"
+                    data-aos="fade-up"
+                    data-aos-delay="500"
+                  >
                     <div className="ultimate-field">
                       <label htmlFor="name">Full Name</label>
                       <input
@@ -209,7 +251,11 @@ function ContactSection() {
                     </select>
                   </div> */}
 
-                  <div className="ultimate-field">
+                  <div
+                    className="ultimate-field"
+                    data-aos="fade-up"
+                    data-aos-delay="600"
+                  >
                     <label htmlFor="message">Project Details</label>
                     <textarea
                       id="message"
@@ -218,7 +264,6 @@ function ContactSection() {
                       placeholder="Tell me about your project, brand, or creative requirement..."
                       value={formData.message}
                       onChange={handleChange}
-              
                     ></textarea>
                   </div>
 
@@ -226,6 +271,8 @@ function ContactSection() {
                     type="submit"
                     className="ultimate-submit-btn"
                     disabled={status.loading}
+                    data-aos="fade-up"
+                    data-aos-delay="700"
                   >
                     <i className="bx bx-send"></i>
                     {status.loading ? "Sending..." : "Send Project Inquiry"}

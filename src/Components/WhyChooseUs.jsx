@@ -35,37 +35,58 @@ function WhyChooseMe() {
         <div className="row g-5 align-items-start">
           <div className="col-lg-5">
             <div className="why-left-content">
-              <span className="why-alt-label">Why Choose Me</span>
+              <span
+                className="why-alt-label"
+                data-aos="fade-up"
+                data-aos-delay="100"
+              >
+                Why Choose Me
+              </span>
 
-              <h2 className="why-alt-title">
+              <h2
+                className="why-alt-title"
+                data-aos="fade-up"
+                data-aos-delay="200"
+              >
                 A creative partner focused on
                 <span> high-converting ad creatives</span>
               </h2>
 
-              <p className="why-alt-text">
-  I design Meta ad creatives that help brands test more angles, capture attention, 
-  and scale paid campaigns. My focus is on creating clear, scroll-stopping visuals 
-  built specifically for performance marketing and DTC brands. 
+              <p
+                className="why-alt-text"
+                data-aos="fade-up"
+                data-aos-delay="300"
+              >
+                I design Meta ad creatives that help brands test more angles, capture attention,
+                and scale paid campaigns. My focus is on creating clear, scroll-stopping visuals
+                built specifically for performance marketing and DTC brands.
 
-  My approach combines creative direction with marketing understanding — crafting 
-  ad creatives that address the pains and needs of the target audience while 
-  maintaining strong visual hierarchy, balance, typography, and composition.
+                My approach combines creative direction with marketing understanding — crafting
+                ad creatives that address the pains and needs of the target audience while
+                maintaining strong visual hierarchy, balance, typography, and composition.
 
-  I also leverage modern AI tools like ChatGPT-4o and MidJourney to create unique 
-  product visuals and ad concepts, allowing brands to produce high-quality creative 
-  assets without the need for expensive photoshoots. 
+                I also leverage modern AI tools like ChatGPT-4o and MidJourney to create unique
+                product visuals and ad concepts, allowing brands to produce high-quality creative
+                assets without the need for expensive photoshoots.
 
-  From DTC product ads to B2B campaign creatives.  
-</p>
-
-              
+                From DTC product ads to B2B campaign creatives.
+              </p>
             </div>
           </div>
 
           <div className="col-lg-7">
-            <div className="why-timeline-list">
-              {reasons.map((item) => (
-                <div className="why-timeline-item" key={item.number}>
+            <div
+              className="why-timeline-list"
+              data-aos="fade-up"
+              data-aos-delay="200"
+            >
+              {reasons.map((item, index) => (
+                <div
+                  className="why-timeline-item"
+                  key={item.number}
+                  data-aos="fade-up"
+                  data-aos-delay={250 + index * 120}
+                >
                   <div className="why-timeline-number">{item.number}</div>
 
                   <div className="why-timeline-icon">
@@ -79,8 +100,6 @@ function WhyChooseMe() {
                 </div>
               ))}
             </div>
-
-           
           </div>
         </div>
       </div>

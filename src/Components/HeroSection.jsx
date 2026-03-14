@@ -8,22 +8,36 @@ function HeroSection() {
         <div className="row align-items-center gy-5">
           <div className="col-lg-6">
             <div className="hero-content">
-              <span className="hero-tag">
+              <span
+                className="hero-tag"
+                data-aos="fade-right"
+                data-aos-delay="100"
+              >
                 <i className="bx bx-palette hero-tag-icon"></i>
                 Available for Freelance Projects
               </span>
 
-              <h1 className="hero-title">
+              <h1
+                className="hero-title"
+                data-aos="fade-up"
+                data-aos-delay="200"
+              >
                 Meta Ad Creatives Graphic Designer <span>Performance-Focused</span> Static Ads
               </h1>
 
-              <p className="hero-desc">
+              <p
+                className="hero-desc"
+                data-aos="fade-up"
+                data-aos-delay="300"
+              >
                 I’m a creative partner for Media Buyers, DTC brands and Agencies who run Meta Ads and need a consistent flow of scroll-stopping static creatives that convert.
               </p>
 
-             
-
-              <div className="hero-buttons">
+              <div
+                className="hero-buttons"
+                data-aos="fade-up"
+                data-aos-delay="400"
+              >
                 <a href="#portfolio" className="btn hero-btn-primary">
                   <i className="bx bx-grid-alt"></i>
                   View Portfolio
@@ -35,8 +49,16 @@ function HeroSection() {
                 </a>
               </div>
 
-              <div className="hero-stats">
-                <div className="hero-stat-box">
+              <div
+                className="hero-stats"
+                data-aos="fade-up"
+                data-aos-delay="500"
+              >
+                <div
+                  className="hero-stat-box"
+                  data-aos="zoom-in"
+                  data-aos-delay="550"
+                >
                   <div className="stat-icon">
                     <i className="bx bx-briefcase-alt-2"></i>
                   </div>
@@ -46,7 +68,11 @@ function HeroSection() {
                   </div>
                 </div>
 
-                <div className="hero-stat-box">
+                <div
+                  className="hero-stat-box"
+                  data-aos="zoom-in"
+                  data-aos-delay="650"
+                >
                   <div className="stat-icon">
                     <i className="bx bx-layer"></i>
                   </div>
@@ -55,18 +81,32 @@ function HeroSection() {
                     <p>Projects Delivered</p>
                   </div>
                 </div>
-
-               
               </div>
             </div>
           </div>
 
           <div className="col-lg-6">
-            <div className="hero-visual">
-              <div className="hero-circle hero-circle-one"></div>
-              <div className="hero-circle hero-circle-two"></div>
+            <div
+              className="hero-visual"
+              data-aos="fade-left"
+              data-aos-delay="250"
+            >
+              <div
+                className="hero-circle hero-circle-one"
+                data-aos="zoom-in"
+                data-aos-delay="300"
+              ></div>
+              <div
+                className="hero-circle hero-circle-two"
+                data-aos="zoom-in"
+                data-aos-delay="400"
+              ></div>
 
-              <div className="hero-image-box">
+              <div
+                className="hero-image-box"
+                data-aos="zoom-in-up"
+                data-aos-delay="450"
+              >
                 <div className="hero-image-topbar">
                   <span></span>
                   <span></span>
@@ -80,17 +120,29 @@ function HeroSection() {
                 />
               </div>
 
-              <div className="floating-badge badge-one">
+              <div
+                className="floating-badge badge-one"
+                data-aos="fade-down"
+                data-aos-delay="600"
+              >
                 <i className="bx bx-pen"></i>
                 Ad Creatives
               </div>
 
-              <div className="floating-badge badge-two">
+              <div
+                className="floating-badge badge-two"
+                data-aos="fade-left"
+                data-aos-delay="700"
+              >
                 <i className="bx bx-shape-square"></i>
                 Meta Ads
               </div>
 
-              <div className="floating-badge badge-three">
+              <div
+                className="floating-badge badge-three"
+                data-aos="fade-up"
+                data-aos-delay="800"
+              >
                 <i className="bx bx-image-alt"></i>
                 8.4x ROAS
               </div>
@@ -98,12 +150,18 @@ function HeroSection() {
           </div>
         </div>
 
-        <div className="hero-socials">
+        <div
+          className="hero-socials"
+          data-aos="fade-up"
+          data-aos-delay="900"
+        >
           <a
             href="https://www.facebook.com/share/1DjFnDBoCg/"
             target="_blank"
             rel="noopener noreferrer"
             aria-label="Facebook"
+            data-aos="zoom-in"
+            data-aos-delay="950"
           >
             <i className="bx bxl-facebook"></i>
           </a>
@@ -113,6 +171,8 @@ function HeroSection() {
             target="_blank"
             rel="noopener noreferrer"
             aria-label="Instagram"
+            data-aos="zoom-in"
+            data-aos-delay="1050"
           >
             <i className="bx bxl-instagram"></i>
           </a>
@@ -122,6 +182,8 @@ function HeroSection() {
             target="_blank"
             rel="noopener noreferrer"
             aria-label="LinkedIn"
+            data-aos="zoom-in"
+            data-aos-delay="1150"
           >
             <i className="bx bxl-linkedin"></i>
           </a>
@@ -131,6 +193,8 @@ function HeroSection() {
             target="_blank"
             rel="noopener noreferrer"
             aria-label="Upwork"
+            data-aos="zoom-in"
+            data-aos-delay="1250"
           >
             <i className="bx bxl-upwork"></i>
           </a>

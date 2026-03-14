@@ -53,20 +53,32 @@ const services = [
   return (
     <section className="services-section" id="services">
       <div className="container">
-        <div className="services-heading text-center">
-          <span className="services-label">Services</span>
-          <h2 className="services-title">
+        <div
+          className="services-heading text-center"
+          data-aos="fade-up"
+        >
+          <span className="services-label" data-aos="fade-up" data-aos-delay="100">
+            Services
+          </span>
+
+          <h2 className="services-title" data-aos="fade-up" data-aos-delay="200">
             High-Converting Ad Creatives for
             <span> DTC Brands & Performance Marketing</span>
           </h2>
-          <p className="services-subtitle">
+
+          <p className="services-subtitle" data-aos="fade-up" data-aos-delay="300">
             I design scroll-stopping Meta ad creatives built for testing hooks, angles, and scaling paid campaigns. Helping DTC brands and agencies produce high-performance creatives faster.
           </p>
         </div>
 
         <div className="row g-4 mt-2">
           {services.map((service, index) => (
-            <div className="col-md-6 col-xl-4" key={index}>
+            <div
+              className="col-md-6 col-xl-4"
+              key={index}
+              data-aos="fade-up"
+              data-aos-delay={150 + index * 100}
+            >
               <div className="service-card">
                 <div className="service-icon">
                   <i className={service.icon}></i>

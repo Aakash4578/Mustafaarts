@@ -590,27 +590,40 @@ function Portfolio() {
   return (
     <section className="portfolio-section" id="portfolio">
       <div className="container">
-        <div className="portfolio-header text-center">
-          <span className="portfolio-label">Selected Work</span>
-          <h2 className="portfolio-title">
+        <div className="portfolio-header text-center" data-aos="fade-up">
+          <span className="portfolio-label" data-aos="fade-up" data-aos-delay="100">
+            Selected Work
+          </span>
+
+          <h2 className="portfolio-title" data-aos="fade-up" data-aos-delay="200">
             Portfolio Highlights
             <span> including Ad Creatives, photo Manipulation, Thumbnails </span>
           </h2>
-          <p className="portfolio-subtitle">
+
+          <p className="portfolio-subtitle" data-aos="fade-up" data-aos-delay="300">
             Explore a curated collection of digital design projects including ad creatives, photo manipulation, thumbnails, and branded visuals created for marketing campaigns, content creators, and modern online brands.
           </p>
         </div>
 
-        <div className="portfolio-filter-wrap">
+        <div
+          className="portfolio-filter-wrap"
+          data-aos="fade-up"
+          data-aos-delay="400"
+        >
           <div className="filter-btns">
-            {categories.map((cat) => (
+            {categories.map((cat, index) => (
               <button
                 key={cat.value}
                 className={`filter-btn ${filter === cat.value ? "active" : ""}`}
                 onClick={() => {
                   setFilter(cat.value);
                   setVisibleCount(8);
+                  if (window.AOS) {
+                    setTimeout(() => window.AOS.refresh(), 200);
+                  }
                 }}
+                data-aos="zoom-in"
+                data-aos-delay={450 + index * 80}
               >
                 {cat.label}
               </button>
@@ -627,6 +640,8 @@ function Portfolio() {
                 setSelectedImage(event.img);
                 setSelectedTitle(event.title);
               }}
+              data-aos="fade-up"
+              data-aos-delay={150 + index * 100}
             >
               <div className="portfolio-card">
                 <div className="portfolio-image-wrap">
@@ -657,10 +672,15 @@ function Portfolio() {
         </div>
 
         {visibleCount < filteredEvents.length && (
-          <div className="text-center mt-5">
+          <div className="text-center mt-5" data-aos="fade-up" data-aos-delay="200">
             <button
               className="portfolio-more-btn"
-              onClick={() => setVisibleCount(filteredEvents.length)}
+              onClick={() => {
+                setVisibleCount(filteredEvents.length);
+                if (window.AOS) {
+                  setTimeout(() => window.AOS.refresh(), 200);
+                }
+              }}
             >
               View More Work
             </button>

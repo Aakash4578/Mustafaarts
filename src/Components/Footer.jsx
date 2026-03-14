@@ -1,5 +1,6 @@
 import React from "react";
 import "../assets/Css/MainStyle.css";
+
 function Footer() {
   const scrollToSection = (id) => {
     const section = document.getElementById(id);
@@ -14,18 +15,28 @@ function Footer() {
         <div className="footer-main">
           <div className="row g-5">
             <div className="col-lg-4">
-              <div className="footer-brand-wrap">
-                <div className="footer-brand-mark"><img src="/favicon.svg" alt="Logo" /></div>
+              <div
+                className="footer-brand-wrap"
+                data-aos="fade-up"
+                data-aos-delay="100"
+              >
+                <div className="footer-brand-mark">
+                  <img src="/favicon.svg" alt="Logo" />
+                </div>
 
                 <div className="footer-brand-content">
-                  <h3>Mustafa Arts</h3>
-                  <p>
+                  <h3 data-aos="fade-up" data-aos-delay="150">Mustafa Arts</h3>
+                  <p data-aos="fade-up" data-aos-delay="250">
                     Premium graphic design for brands, agencies, and creators
                     who want sharper visuals and stronger brand presence.
                   </p>
                 </div>
 
-                <div className="footer-socials">
+                <div
+                  className="footer-socials"
+                  data-aos="fade-up"
+                  data-aos-delay="350"
+                >
                   <a
                     href="https://www.instagram.com/mustafa_arts_0"
                     target="_blank"
@@ -63,44 +74,90 @@ function Footer() {
             </div>
 
             <div className="col-6 col-md-4 col-lg-2">
-              <div className="footer-links-block">
-                <h4>Navigation</h4>
-                <button type="button" onClick={() => scrollToSection("home")}>
+              <div
+                className="footer-links-block"
+                data-aos="fade-up"
+                data-aos-delay="200"
+              >
+                <h4 data-aos="fade-up" data-aos-delay="250">Navigation</h4>
+
+                <button
+                  type="button"
+                  onClick={() => scrollToSection("home")}
+                  data-aos="fade-up"
+                  data-aos-delay="300"
+                >
                   Home
                 </button>
-                <button type="button" onClick={() => scrollToSection("about")}>
+                <button
+                  type="button"
+                  onClick={() => scrollToSection("about")}
+                  data-aos="fade-up"
+                  data-aos-delay="380"
+                >
                   About
                 </button>
-                <button type="button" onClick={() => scrollToSection("services")}>
+                <button
+                  type="button"
+                  onClick={() => scrollToSection("services")}
+                  data-aos="fade-up"
+                  data-aos-delay="460"
+                >
                   Services
                 </button>
-                <button type="button" onClick={() => scrollToSection("portfolio")}>
+                <button
+                  type="button"
+                  onClick={() => scrollToSection("portfolio")}
+                  data-aos="fade-up"
+                  data-aos-delay="540"
+                >
                   Portfolio
                 </button>
-                <button type="button" onClick={() => scrollToSection("contact")}>
+                <button
+                  type="button"
+                  onClick={() => scrollToSection("contact")}
+                  data-aos="fade-up"
+                  data-aos-delay="620"
+                >
                   Contact
                 </button>
               </div>
             </div>
 
             <div className="col-6 col-md-4 col-lg-3">
-              <div className="footer-links-block">
-                <h4>Services</h4>
-                <span>Ad Creatives</span>
-                <span>Social Media Design</span>
-                <span>Brand Identity</span>
-                <span>Thumbnail Design</span>
-                <span>Creative Support</span>
+              <div
+                className="footer-links-block"
+                data-aos="fade-up"
+                data-aos-delay="300"
+              >
+                <h4 data-aos="fade-up" data-aos-delay="350">Services</h4>
+                <span data-aos="fade-up" data-aos-delay="400">Ad Creatives</span>
+                <span data-aos="fade-up" data-aos-delay="480">Social Media Design</span>
+                <span data-aos="fade-up" data-aos-delay="560">Brand Identity</span>
+                <span data-aos="fade-up" data-aos-delay="640">Thumbnail Design</span>
+                <span data-aos="fade-up" data-aos-delay="720">Creative Support</span>
               </div>
             </div>
 
             <div className="col-md-4 col-lg-3">
-              <div className="footer-contact-card">
-                <span className="footer-contact-label">Let’s Connect</span>
+              <div
+                className="footer-contact-card"
+                data-aos="fade-up"
+                data-aos-delay="400"
+              >
+                <span
+                  className="footer-contact-label"
+                  data-aos="fade-up"
+                  data-aos-delay="450"
+                >
+                  Let’s Connect
+                </span>
+
                 {/* <a href="mailto:mustafabhutta258@gmail.com" className="footer-email">
                   mustafabhutta258@gmail.com
                 </a> */}
-                <p>
+
+                <p data-aos="fade-up" data-aos-delay="550">
                   Available for freelance projects, ongoing design support, and
                   creative collaborations.
                 </p>
@@ -109,6 +166,8 @@ function Footer() {
                   type="button"
                   className="footer-cta-btn"
                   onClick={() => scrollToSection("contact")}
+                  data-aos="zoom-in"
+                  data-aos-delay="650"
                 >
                   Start a Project
                 </button>
@@ -117,7 +176,11 @@ function Footer() {
           </div>
         </div>
 
-        <div className="footer-bottom">
+        <div
+          className="footer-bottom"
+          data-aos="fade-up"
+          data-aos-delay="500"
+        >
           <p>© 2018 Mustafa Arts . All rights reserved.</p>
           <span>Designed with clarity, creativity, and purpose.</span>
         </div>
