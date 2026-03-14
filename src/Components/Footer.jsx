@@ -1,73 +1,125 @@
-import React, { useState, useEffect } from "react";
-import "../../public/assets/Css/MainStyle.css";
-import { SiUpwork } from "react-icons/si";
-
+import React from "react";
+import "../assets/Css/MainStyle.css";
 function Footer() {
-  const [scrolled, setScrolled] = useState(false);
-
-  // Scroll listener for optional styling
-  useEffect(() => {
-    const handleScroll = () => setScrolled(window.scrollY >= 50);
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
-
-  // Smooth scroll handler
   const scrollToSection = (id) => {
     const section = document.getElementById(id);
-    if (section) section.scrollIntoView({ behavior: "smooth" });
+    if (section) {
+      section.scrollIntoView({ behavior: "smooth" });
+    }
   };
 
   return (
-    <footer className={`bg-footer text-light pt-5 pb-3 mt-5 w-100 ${scrolled ? "footer-scrolled" : ""}`}>
-      <div className="container"> {/* Use standard Bootstrap container */}
-        <div className="row">
+    <footer className="site-footer">
+      <div className="container">
+        <div className="footer-main">
+          <div className="row g-5">
+            <div className="col-lg-4">
+              <div className="footer-brand-wrap">
+                <div className="footer-brand-mark"><img src="/favicon.svg" alt="Logo" /></div>
 
-          {/* Logo + About */}
-          <div className="col-md-4 mb-4 text-center text-md-start">
-            <h4 className="fw-bold brand">MustafaArts</h4>
-            <p className="text-secondary text-white mt-3">
-              Where Creativity Leaves Competition Behind
-            </p>
-          </div>
+                <div className="footer-brand-content">
+                  <h3>Mustafa Arts</h3>
+                  <p>
+                    Premium graphic design for brands, agencies, and creators
+                    who want sharper visuals and stronger brand presence.
+                  </p>
+                </div>
 
-          {/* Quick Links */}
-          <div className="col-md-4 mb-4 text-center text-md-start">
-            <h5 className="fw-bold mb-3">Quick Links</h5>
-            <ul className="list-unstyled">
-              <li><button className="footer-link-btn" onClick={() => scrollToSection("home")}>Home</button></li>
-              <li><button className="footer-link-btn" onClick={() => scrollToSection("portfolio")}>Portfolio</button></li>
-              <li><button className="footer-link-btn" onClick={() => scrollToSection("testimonial")}>Testimonial</button></li>
-              <li><button className="footer-link-btn" onClick={() => scrollToSection("whychoose")}>Why choose me</button></li>
-              <li><button className="footer-link-btn" onClick={() => scrollToSection("contact")}>Contact me</button></li>
-            </ul>
-          </div>
+                <div className="footer-socials">
+                  <a
+                    href="https://www.instagram.com/mustafa_arts_0"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="Instagram"
+                  >
+                    <i className="bx bxl-instagram"></i>
+                  </a>
+                  <a
+                    href="https://www.linkedin.com/in/mustafa-sajid-2ba284199"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="LinkedIn"
+                  >
+                    <i className="bx bxl-linkedin"></i>
+                  </a>
+                  <a
+                    href="https://www.upwork.com/freelancers/~012db527b2c34c54e4"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="Upwork"
+                  >
+                    <i className="bx bxl-upwork"></i>
+                  </a>
+                  <a
+                    href="https://www.facebook.com/share/1DjFnDBoCg/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="Facebook"
+                  >
+                    <i className="bx bxl-facebook"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
 
-          {/* Social Media */}
-          <div className="col-md-4 mb-4 text-center text-md-start">
-            <h5 className="fw-bold mb-3">Follow Us</h5>
-            <div className="d-flex gap-3 justify-content-center justify-content-md-start">
-              <a href="https://www.facebook.com/share/1DjFnDBoCg/" target="_blank" rel="noopener noreferrer" className="social-icon">
-                <i className="fab fa-facebook-f"></i>
-              </a>
-              <a href="https://www.instagram.com/mustafa_arts_0?igsh=dXZtYTFqZzcxcWNu" target="_blank" rel="noopener noreferrer" className="social-icon">
-                <i className="fab fa-instagram"></i>
-              </a>
-              <a href="https://www.linkedin.com/in/mustafa-sajid-2ba284199" target="_blank" rel="noopener noreferrer" className="social-icon">
-                <i className="fab fa-linkedin-in"></i>
-              </a>
-              <a href="https://www.upwork.com/freelancers/~012db527b2c34c54e4" target="_blank" rel="noopener noreferrer" className="social-icon">
-                <SiUpwork size={24} />
-              </a>
+            <div className="col-6 col-md-4 col-lg-2">
+              <div className="footer-links-block">
+                <h4>Navigation</h4>
+                <button type="button" onClick={() => scrollToSection("home")}>
+                  Home
+                </button>
+                <button type="button" onClick={() => scrollToSection("about")}>
+                  About
+                </button>
+                <button type="button" onClick={() => scrollToSection("services")}>
+                  Services
+                </button>
+                <button type="button" onClick={() => scrollToSection("portfolio")}>
+                  Portfolio
+                </button>
+                <button type="button" onClick={() => scrollToSection("contact")}>
+                  Contact
+                </button>
+              </div>
+            </div>
+
+            <div className="col-6 col-md-4 col-lg-3">
+              <div className="footer-links-block">
+                <h4>Services</h4>
+                <span>Ad Creatives</span>
+                <span>Social Media Design</span>
+                <span>Brand Identity</span>
+                <span>Thumbnail Design</span>
+                <span>Creative Support</span>
+              </div>
+            </div>
+
+            <div className="col-md-4 col-lg-3">
+              <div className="footer-contact-card">
+                <span className="footer-contact-label">Let’s Connect</span>
+                {/* <a href="mailto:mustafabhutta258@gmail.com" className="footer-email">
+                  mustafabhutta258@gmail.com
+                </a> */}
+                <p>
+                  Available for freelance projects, ongoing design support, and
+                  creative collaborations.
+                </p>
+
+                <button
+                  type="button"
+                  className="footer-cta-btn"
+                  onClick={() => scrollToSection("contact")}
+                >
+                  Start a Project
+                </button>
+              </div>
             </div>
           </div>
-
         </div>
 
-        <hr className="border-secondary my-4" />
-
-        <div className="text-center text-secondary small">
-          © {new Date().getFullYear()} MustafaArts — All Rights Reserved.
+        <div className="footer-bottom">
+          <p>© 2018 Mustafa Arts . All rights reserved.</p>
+          <span>Designed with clarity, creativity, and purpose.</span>
         </div>
       </div>
     </footer>

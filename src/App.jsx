@@ -1,35 +1,18 @@
-import React, { useEffect } from 'react';
-import Header from './Components/Header';
-import MainSection from './Components/MainSection';
-import Portfolio from './Components/Portfolio';
-import FeedBack from './Components/FeedBack';
-import Whychoose from './Components/Whychoose';
-import Contactus from './Components/Contactus';
-import Footer from './Components/Footer';
-import BackToTop from './Components/BackToTop';
+import React from "react";
+import Home from "./pages/Home";
+import { ThemeProviderCustom } from "./context/ThemeContext";
 
+import "./assets/Css/Theme.css";
+import "./assets/Css/MainStyle.css";
 
 function App() {
-  useEffect(() => {
-    window.scrollTo(0, 0); // Page always starts at top
-  }, []);
-useEffect(() => {
-  AOS.init({ duration: 1000 });
-}, []);
   return (
-    <>
-      <Header />
-      <MainSection />
-      <Portfolio />
-      <FeedBack />
-      <Whychoose />
-      <Contactus />
-      <Footer />
-      <BackToTop />
-    </>
+    <ThemeProviderCustom>
+      <div className="app-root">
+        <Home />
+      </div>
+    </ThemeProviderCustom>
   );
 }
-
-
 
 export default App;

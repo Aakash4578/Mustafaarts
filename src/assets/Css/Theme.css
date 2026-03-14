@@ -1,0 +1,40 @@
+:root {
+  --bg: #ffffff;
+  --bg-secondary: #280000;
+  --text: #111111;
+  --text-soft: #1a1a1a;
+  --primary: #7b0205;
+  --secondary: #440003;
+  --card: #ffffff;
+  --cards: #ffffff;
+  --border: rgba(0, 0, 0, 0.08);
+  --shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+.app-root{
+  min-height:100vh;
+  background:var(--bg);
+}
+[data-theme="dark"] {
+  --bg: #0f0f0f;
+  --bg-secondary: #3a0303;
+  --text: #ffffff;
+  --text-soft: #c2b8b8;
+  --primary: #e03d3d;
+  --secondary: #6d0f0f;
+  --card: #1f1616;
+  --border: rgba(255, 255, 255, 0.08);
+  --shadow: 0 12px 30px rgba(0, 0, 0, 0.35);
+    --cards: #e2e0e0;
+
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  transition: background 0.35s ease, color 0.35s ease;
+  font-family: "Poppins", sans-serif;
+}

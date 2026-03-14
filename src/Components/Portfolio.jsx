@@ -1,14 +1,12 @@
-import React, { useMemo, useState } from 'react';
-import "../../public/assets/Css/Portfolio.css";
-import styles from "../../public/assets/Css/Heading.module.css";
+import React, { useMemo, useState } from "react";
+import "../assets/Css/MainStyle.css";
 
 function Portfolio() {
-  
-  const [filter, setFilter] = useState('all');
+  const [filter, setFilter] = useState("all");
   const [visibleCount, setVisibleCount] = useState(8);
+  const [selectedImage, setSelectedImage] = useState(null);
+  const [selectedTitle, setSelectedTitle] = useState("");
 
-const [selectedImage, setSelectedImage] = useState(null);
-const [selectedTitle, setSelectedTitle] = useState("");
   const optimizeCloudinary = (url, width = 900) => {
     if (!url) return "";
     const cleanUrl = url.trim();
@@ -565,12 +563,12 @@ const [selectedTitle, setSelectedTitle] = useState("");
   );
 
   const categories = [
-    { value: "all", label: "All" },
+    { value: "all", label: "All Work" },
     { value: "thumbnails", label: "Thumbnails" },
     { value: "creativeads", label: "Creative Ads" },
     { value: "photomanipulation", label: "Photo Manipulation" },
     { value: "ebook", label: "Ebook" },
-    { value: "Performance-Focused Static Ads", label: "Performance-Focused Static Ads" }
+    { value: "Performance-Focused Static Ads", label: "Performance Ads" },
   ];
 
   const shuffledAllEvents = useMemo(() => {
@@ -590,100 +588,118 @@ const [selectedTitle, setSelectedTitle] = useState("");
   const visibleItems = filteredEvents.slice(0, visibleCount);
 
   return (
-    <section className="brand-section-tab" id="portfolio">
-      <div className="container text-center">
-        <div className="mb-4" data-aos="fade-up">
-          <div className={styles.modernheading}>
-            <h2>Portfolio</h2>
+    <section className="portfolio-section" id="portfolio">
+      <div className="container">
+        <div className="portfolio-header text-center">
+          <span className="portfolio-label">Selected Work</span>
+          <h2 className="portfolio-title">
+            Portfolio Highlights
+            <span> including Ad Creatives, photo Manipulation, Thumbnails </span>
+          </h2>
+          <p className="portfolio-subtitle">
+            Explore a curated collection of digital design projects including ad creatives, photo manipulation, thumbnails, and branded visuals created for marketing campaigns, content creators, and modern online brands.
+          </p>
+        </div>
+
+        <div className="portfolio-filter-wrap">
+          <div className="filter-btns">
+            {categories.map((cat) => (
+              <button
+                key={cat.value}
+                className={`filter-btn ${filter === cat.value ? "active" : ""}`}
+                onClick={() => {
+                  setFilter(cat.value);
+                  setVisibleCount(8);
+                }}
+              >
+                {cat.label}
+              </button>
+            ))}
           </div>
         </div>
 
-        <div className="filter-btns d-flex flex-wrap justify-content-center" data-aos="fade-up">
-          {categories.map((cat) => (
-            <button
-              key={cat.value}
-              className={`btn filter-btn ${filter === cat.value ? "active" : ""}`}
-              onClick={() => {
-                setFilter(cat.value);
-                setVisibleCount(8);
-              }}
-            >
-              {cat.label}
-            </button>
-          ))}
-        </div>
-
-        <div className="masonry-grid" data-aos="fade-up">
+        <div className="masonry-grid">
           {visibleItems.map((event, index) => (
             <div
               key={event.id}
-              className={`portfolio-item ${event.category} show masonry-item`}
+              className="masonry-item"
+              onClick={() => {
+                setSelectedImage(event.img);
+                setSelectedTitle(event.title);
+              }}
             >
-              <div className="event-image">
-               <img
-  src={event.img}
-  // alt={event.title}
-  // title={event.title}
-  loading={index < 4 ? "eager" : "lazy"}
-  fetchPriority={index < 2 ? "high" : "auto"}
-  decoding="async"
-  onClick={() => {
-    setSelectedImage(event.img);
-    setSelectedTitle(event.title);
-  }}
-  className="preview-clickable"
-/>
+              <div className="portfolio-card">
+                <div className="portfolio-image-wrap">
+                  <img
+                    src={event.img}
+                    alt={event.title}
+                    loading={index < 4 ? "eager" : "lazy"}
+                    fetchPriority={index < 2 ? "high" : "auto"}
+                    decoding="async"
+                    className="portfolio-image"
+                  />
+
+                  <div className="portfolio-overlay">
+                    <div className="portfolio-overlay-content">
+                      {/* <span className="portfolio-category">{event.category}</span>
+                      <h4>{event.title}</h4>
+                      <p>{event.desc}</p> */}
+                    </div>
+
+                    <div className="portfolio-view-icon">
+                      <i className="bx bx-plus"></i>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           ))}
         </div>
 
         {visibleCount < filteredEvents.length && (
-          <button
-            className="btn allbutton mt-4"
-            onClick={() => setVisibleCount(filteredEvents.length)}
-          >
-            See All
-          </button>
+          <div className="text-center mt-5">
+            <button
+              className="portfolio-more-btn"
+              onClick={() => setVisibleCount(filteredEvents.length)}
+            >
+              View More Work
+            </button>
+          </div>
         )}
       </div>
+
       {selectedImage && (
-  <div
-    className="image-preview-modal"
-    onClick={() => {
-      setSelectedImage(null);
-      setSelectedTitle("");
-    }}
-  >
-    <div
-      className="image-preview-content"
-      onClick={(e) => e.stopPropagation()}
-    >
-      <button
-        className="image-preview-close"
-        onClick={() => {
-          setSelectedImage(null);
-          setSelectedTitle("");
-        }}
-      >
-        ×
-      </button>
+        <div
+          className="image-preview-modal"
+          onClick={() => {
+            setSelectedImage(null);
+            setSelectedTitle("");
+          }}
+        >
+          <div
+            className="image-preview-content"
+            onClick={(e) => e.stopPropagation()}
+          >
+            <button
+              className="image-preview-close"
+              onClick={() => {
+                setSelectedImage(null);
+                setSelectedTitle("");
+              }}
+            >
+              ×
+            </button>
 
-      <img
-        src={selectedImage}
-        alt={selectedTitle}
-        className="image-preview-full"
-      />
-
-      {/* <h4 className="image-preview-title">{selectedTitle}</h4> */}
-    </div>
-  </div>
-)}
+            <img
+              src={selectedImage}
+              alt={selectedTitle}
+              className="image-preview-full"
+            />
+          </div>
+        </div>
+      )}
     </section>
-
-    
   );
-  
 }
 
-export default Portfolio;	
+export default Portfolio;
