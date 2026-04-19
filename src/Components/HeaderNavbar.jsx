@@ -109,7 +109,7 @@ export default function HeaderNavbar() {
               <button
                 type="button"
                 className="theme-toggle-btn"
-                onClick={toggleTheme}
+                // onClick={toggleTheme}
                 aria-label="Toggle theme"
                 data-aos="zoom-in"
                 data-aos-delay="350"
@@ -126,7 +126,6 @@ export default function HeaderNavbar() {
               >
                 Let’s Talk
               </button>
-
               <button
                 type="button"
                 className="mobile-menu-btn d-lg-none"

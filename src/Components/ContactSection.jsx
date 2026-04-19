@@ -79,105 +79,7 @@ function ContactSection() {
           <div className="contact-ultimate-shape shape-b"></div>
 
           <div className="row g-5 align-items-center">
-            <div className="col-lg-6">
-              <div
-                className="contact-ultimate-content"
-                data-aos="fade-right"
-                data-aos-delay="100"
-              >
-                <span
-                  className="contact-kicker"
-                  data-aos="fade-up"
-                  data-aos-delay="150"
-                >
-                  <i className="bx bx-sparkles"></i>
-                  Let’s Build Something Strong
-                </span>
-
-                <h2
-                  className="contact-ultimate-title"
-                  data-aos="fade-up"
-                  data-aos-delay="250"
-                >
-                  Ready to turn your ideas into
-                  premium visual design?
-                </h2>
-
-                <div
-                  className="contact-mini-cards"
-                  data-aos="fade-up"
-                  data-aos-delay="350"
-                >
-                  <div
-                    className="contact-mini-card"
-                    data-aos="fade-up"
-                    data-aos-delay="400"
-                  >
-                    <small>Email</small>
-                    <a href="mailto:mustafabhutta258@gmail.com">
-                      mustafabhutta258@gmail.com
-                    </a>
-                  </div>
-
-                  <div
-                    className="contact-mini-card"
-                    data-aos="fade-up"
-                    data-aos-delay="500"
-                  >
-                    <small>Focus</small>
-                    <p>Ad Creatives, Social Media, Branding</p>
-                  </div>
-
-                  <div
-                    className="contact-mini-card"
-                    data-aos="fade-up"
-                    data-aos-delay="600"
-                  >
-                    <small>Status</small>
-                    <p>Available for freelance & Long-Term projects</p>
-                  </div>
-                </div>
-
-                <div
-                  className="contact-social-strip"
-                  data-aos="fade-up"
-                  data-aos-delay="700"
-                >
-                  <a
-                    href="https://www.instagram.com/mustafa_arts_0"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    aria-label="Instagram"
-                  >
-                    <i className="bx bxl-instagram"></i>
-                  </a>
-                  <a
-                    href="https://www.linkedin.com/in/mustafa-sajid-2ba284199"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    aria-label="LinkedIn"
-                  >
-                    <i className="bx bxl-linkedin"></i>
-                  </a>
-                  <a
-                    href="https://www.upwork.com/freelancers/~012db527b2c34c54e4"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    aria-label="Upwork"
-                  >
-                    <i className="bx bxl-upwork"></i>
-                  </a>
-                  <a
-                    href="https://www.facebook.com/share/1DjFnDBoCg/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    aria-label="Facebook"
-                  >
-                    <i className="bx bxl-facebook"></i>
-                  </a>
-                </div>
-              </div>
-            </div>
+          
 
             <div className="col-lg-6">
               <div
@@ -290,6 +192,105 @@ function ContactSection() {
                     </div>
                   )}
                 </form>
+              </div>
+            </div>
+              <div className="col-lg-6">
+              <div
+                className="contact-ultimate-content"
+                data-aos="fade-right"
+                data-aos-delay="100"
+              >
+                <span
+                  className="contact-kicker"
+                  data-aos="fade-up"
+                  data-aos-delay="150"
+                >
+                  <i className="bx bx-sparkles"></i>
+                  Let’s Build Something Strong
+                </span>
+
+                <h2
+                  className="contact-ultimate-title"
+                  data-aos="fade-up"
+                  data-aos-delay="250"
+                >
+                  Ready to turn your ideas into
+                  premium visual design?
+                </h2>
+
+                <div
+                  className="contact-mini-cards"
+                  data-aos="fade-up"
+                  data-aos-delay="350"
+                >
+                  <div
+                    className="contact-mini-card"
+                    data-aos="fade-up"
+                    data-aos-delay="400"
+                  >
+                    <small>Email</small>
+                    <a href="mailto:mustafabhutta258@gmail.com">
+                      mustafabhutta258@gmail.com
+                    </a>
+                  </div>
+
+                  <div
+                    className="contact-mini-card"
+                    data-aos="fade-up"
+                    data-aos-delay="500"
+                  >
+                    <small>Focus</small>
+                    <p>Ad Creatives, Social Media, Branding</p>
+                  </div>
+
+                  <div
+                    className="contact-mini-card"
+                    data-aos="fade-up"
+                    data-aos-delay="600"
+                  >
+                    <small>Status</small>
+                    <p>Available for freelance & Long-Term projects</p>
+                  </div>
+                </div>
+
+                <div
+                  className="contact-social-strip"
+                  data-aos="fade-up"
+                  data-aos-delay="700"
+                >
+                  <a
+                    href="https://www.instagram.com/mustafa_arts_0"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="Instagram"
+                  >
+                    <i className="bx bxl-instagram"></i>
+                  </a>
+                  <a
+                    href="https://www.linkedin.com/in/mustafa-sajid-2ba284199"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="LinkedIn"
+                  >
+                    <i className="bx bxl-linkedin"></i>
+                  </a>
+                  <a
+                    href="https://www.upwork.com/freelancers/~012db527b2c34c54e4"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="Upwork"
+                  >
+                    <i className="bx bxl-upwork"></i>
+                  </a>
+                  <a
+                    href="https://www.facebook.com/share/1DjFnDBoCg/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="Facebook"
+                  >
+                    <i className="bx bxl-facebook"></i>
+                  </a>
+                </div>
               </div>
             </div>
           </div>
