@@ -106,16 +106,16 @@ export default function HeaderNavbar() {
               data-aos="fade-left"
               data-aos-delay="300"
             >
-              <button
+              {/* <button
                 type="button"
                 className="theme-toggle-btn"
-                // onClick={toggleTheme}
+               onClick={toggleTheme}
                 aria-label="Toggle theme"
                 data-aos="zoom-in"
                 data-aos-delay="350"
               >
                 {theme === "dark" ? <SunMedium size={18} /> : <Moon size={18} />}
-              </button>
+              </button> */}
 
               <button
                 type="button"

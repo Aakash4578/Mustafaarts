@@ -7,7 +7,6 @@ import Portfolio from "../Components/Portfolio";
 import WhyChooseUs from "../Components/WhyChooseUs";
 import Testimonials from "../Components/Testimonials";
 import ContactSection from "../Components/ContactSection";
-import Blogs from "../Components/Blogs";
 import Footer from "../Components/Footer";
 
 export default function Home() {
@@ -16,7 +15,6 @@ export default function Home() {
       <HeaderNavbar />
 
       <main>
-        <Blogs />
         <HeroSection />
         <AboutSection />
         <ServicesSection />
